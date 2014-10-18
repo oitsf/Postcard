@@ -99,7 +99,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="316" width="368" height="30"/>
+                                    <rect key="frame" x="16" y="185" width="217" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="sendMailButtonPressed:" destination="Whi-PU-Z0y" eventType="touchUpInside" id="qDE-7d-p0c"/>
@@ -108,10 +108,19 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVZ-aw-j3I">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="16" y="88" width="217" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kk-7x-flW">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="117" width="217" height="21"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -123,6 +132,7 @@
                                 <exclude reference="YeI-qp-axF"/>
                                 <exclude reference="abs-9L-1PM"/>
                                 <exclude reference="UVZ-aw-j3I"/>
+                                <exclude reference="6kk-7x-flW"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -132,6 +142,7 @@
                                 <include reference="YeI-qp-axF"/>
                                 <include reference="abs-9L-1PM"/>
                                 <include reference="UVZ-aw-j3I"/>
+                                <include reference="6kk-7x-flW"/>
                             </mask>
                         </variation>
                     </view>
@@ -139,7 +150,9 @@
                     <connections>
                         <outlet property="enterMessageTextField" destination="YeI-qp-axF" id="jfL-2s-Kr2"/>
                         <outlet property="enterNameTextField" destination="uW3-1I-DT2" id="LDb-Xo-afK"/>
+                        <outlet property="mailButton" destination="abs-9L-1PM" id="GzC-1T-7gR"/>
                         <outlet property="messageLabel" destination="UVZ-aw-j3I" id="56I-Bz-MQP"/>
+                        <outlet property="nameLabel" destination="6kk-7x-flW" id="hYs-Hr-URq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k8j-GO-h9l" userLabel="First Responder" sceneMemberID="firstResponder"/>
